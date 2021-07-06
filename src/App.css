@@ -13,8 +13,13 @@
   width: 80vw;
 }
 
-.my-content-container .item {
-  width: 48%;
+.container-item {
+  max-width: 50%;
+}
+
+.video-player {
+  width: 600px;
+  height: 350px;
 }
 
 .imageContainer.img{
@@ -24,6 +29,16 @@
 
 @media (max-width: 960px) {
   .my-content-container {
+    width: 100%;
     flex-direction: column;
+  }
+
+  .container-item {
+    max-width: 95%;
+  }
+  
+  .video-player {
+    width: 400px;
+    height: 300px;
   }
 }

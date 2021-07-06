@@ -30,6 +30,8 @@ var state_long_value = "Florida"
 var state_short_value = "FL"
 var zip_value = "33142"
 var url_value = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57482.226080868684!2d-80.26447785863111!3d25.78248059597097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1624061395422!5m2!1sen!2sus"
+var home_src_url_value = "https://www.youtube.com/embed/LfFGG8QpO7A"
+var svc_src_url_value = "https://www.youtube.com/embed/vJjaRTPiksA"
 
 const App = () => {
   return (
@@ -50,7 +52,8 @@ const App = () => {
               city={city_value}
               state_long={state_long_value}
               zip={zip_value}
-              phone={phone_value} />
+              phone={phone_value}
+              src_url= {home_src_url_value} />
           </Route>
           <Route path="/home">
             <Home
@@ -58,7 +61,8 @@ const App = () => {
               city={city_value}
               state_long={state_long_value}
               zip={zip_value}
-              phone={phone_value} />
+              phone={phone_value} 
+              src_url= {home_src_url_value} />
           </Route>
           <Route path="/about">
             <About
@@ -70,8 +74,9 @@ const App = () => {
           </Route>
           <Route path="/services">
             <Services
-              company_name={company_name_value}
-              phone={phone_value} />
+              /*company_name={company_name_value}
+              phone={phone_value}*/
+              src_url={svc_src_url_value} />
           </Route>          
           <Route path="/heating">
             <Heating
